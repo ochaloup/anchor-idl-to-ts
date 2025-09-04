@@ -1,19 +1,21 @@
 [package]
-name = "simple-anchor-idl-ts"
-version = "0.1.2"
+name = "anchor-idl-to-ts"
+version = "0.2.0"
 edition = "2021"
-authors = ["Nick Ewasiuk <ewasiuk.nick@gmail.com>"]
+authors = ["Nick Ewasiuk <ewasiuk.nick@gmail.com>", "chalda <https://github.com/ochaloup>"]
 description = "A tool for generating a typescript file from an Anchor IDL json file."
 license = "MIT OR Apache-2.0"
 keywords = ["cli", "solana", "anchor", "idl"]
 categories = ["command-line-utilities"]
-repository = "https://github.com/nicholas-ewasiuk/simple-anchor-idl-ts"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+repository = "https://github.com/nicholas-ewasiuk/anchor-idl-to-ts"
 
 [dependencies]
-anchor-idl = "0.4.1"
+anchor-idl-030 = { package = "anchor-idl", version = "0.3.0" }
+anchor-idl-041 = { package = "anchor-idl", version = "0.4.1" }
 anyhow = "1.0.79"
-clap = { version = "4.0", features = ["derive"] }
+clap = { version = "4.4.12", features = ["derive"] }
 heck = "0.4.1"
-serde_json = { version = "1.0", default-features = false, features = ["alloc"] }
+serde_json = { version = "1.0.143", default-features = false, features = ["alloc"] }
+
+[features]
+default = []
