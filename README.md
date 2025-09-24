@@ -74,3 +74,4 @@ cargo run --bin anchor-idl-to-ts ./vsr-idl-0.31.json -o ./vsr-idl-0.31.ts
 
 -----
 Forked from [nicholas-ewasiuk/simple-anchor-idl-ts](https://github.com/nicholas-ewasiuk/simple-anchor-idl-ts)
+Credits to [`anchor-idl`](https://github.com/saber-hq/anchor-gen) that does all the heavy lifting.
