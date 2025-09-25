@@ -9,8 +9,16 @@ This tool mimics how the Anchor CLI generates a TS file. Normally, running `anch
 the IDL JSON file (`target/idl/<name>.json`) and the TS file (`target/types/<name>.ts`).
 Given only the IDL JSON file as input, this tool generates the TS file exactly as `anchor build` would.
 
-The Anchor code used to generate the TS file can be found here:
-[https://github.com/solana-foundation/anchor/blob/18d0ca0ce9b78c03ef370406c6ba86e28e4591ab/cli/src/lib.rs#L2594](https://github.com/solana-foundation/anchor/blob/18d0ca0ce9b78c03ef370406c6ba86e28e4591ab/cli/src/lib.rs#L2594)
+The Anchor code used to generate the TS file can be found at
+[Solana Anchor repository](https://github.com/solana-foundation/anchor/blob/18d0ca0ce9b78c03ef370406c6ba86e28e4591ab/cli/src/lib.rs#L2594).
+
+## Usage
+
+```bash
+cargo install anchor-idl-to-ts
+
+anchor-idl-to-ts <path-to-idl.json> [-o <output-file.ts>]
+```
 
 ---
 
@@ -74,4 +82,4 @@ cargo run --bin anchor-idl-to-ts ./vsr-idl-0.31.json -o ./vsr-idl-0.31.ts
 
 -----
 Forked from [nicholas-ewasiuk/simple-anchor-idl-ts](https://github.com/nicholas-ewasiuk/simple-anchor-idl-ts)
-Credits to [`anchor-idl`](https://github.com/saber-hq/anchor-gen) that does all the heavy lifting.
+Credits to [`anchor-gen`](https://github.com/saber-hq/anchor-gen) that does all the heavy lifting.

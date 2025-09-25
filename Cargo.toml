@@ -1,19 +1,19 @@
 [package]
 name = "anchor-idl-to-ts"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
-authors = ["Nick Ewasiuk <ewasiuk.nick@gmail.com>", "chalda <https://github.com/ochaloup>"]
+authors = ["chalda <https://github.com/ochaloup>", "Nick Ewasiuk <ewasiuk.nick@gmail.com>"]
 description = "A tool for generating a typescript file from an Anchor IDL json file."
 license = "MIT OR Apache-2.0"
 keywords = ["cli", "solana", "anchor", "idl"]
 categories = ["command-line-utilities"]
-repository = "https://github.com/nicholas-ewasiuk/anchor-idl-to-ts"
+repository = "https://github.com/ochaloup/anchor-idl-to-ts"
 
 [dependencies]
 anchor-idl-030 = { package = "anchor-idl", version = "0.3.0" }
 anchor-idl-041 = { package = "anchor-idl", version = "0.4.1" }
 anyhow = "1.0.100"
-clap = { version = "4.5.47", features = ["derive"] }
+clap = { version = "4.5.48", features = ["derive"] }
 heck = "0.5.0"
 serde_json = { version = "1.0.145", default-features = false, features = ["alloc"] }
 
